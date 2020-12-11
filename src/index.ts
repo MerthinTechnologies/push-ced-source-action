@@ -20,14 +20,10 @@ const run = async () => {
     console.log(`Using environment: ${environment}`);
   }
 
-  if (path) {
-    process.chdir(path);
-    console.log(`Using ${path} as working directory`);
-  }
-
   const command = cli({
     token: cliToken,
     useConsoleSpinner: false,
+    workingPath: path,
   }).pushSource();
   await command.run(environment);
 };
