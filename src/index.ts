@@ -1,6 +1,6 @@
 import 'reflect-metadata';
 import * as core from '@actions/core';
-import cli, { GlobalErrorHandler } from '@ced/cli-dev';
+import cli, { GlobalErrorHandler } from '@ced/cli';
 
 GlobalErrorHandler.set();
 
