@@ -22,8 +22,10 @@ const run = async () => {
 
   const command = cli({
     token: cliToken,
-    useConsoleSpinner: false,
     workingPath: path,
+    config: {
+      useConsoleSpinner: false,
+    },
   }).pushSource();
   await command.run(environment);
 };
