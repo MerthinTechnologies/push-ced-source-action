@@ -20,14 +20,23 @@ const run = async () => {
     console.log(`Using environment: ${environment}`);
   }
 
-  const command = cli({
+  const versionMetadata = {
+    cvs: 'GitHub',
+    commitSha: process.env['GITHUB_SHA'],
+    repositoryUrl: `${process.env['GITHUB_SERVER_URL']}/${process.env['GITHUB_REPOSITORY']}`,
+  };
+
+  const cedCli = cli({
     token: cliToken,
     workingPath: path,
     config: {
       useConsoleSpinner: false,
     },
-  }).pushSource();
-  await command.run(environment);
+  });
+  const version = await cedCli.createVersion().run(environment);
+
+  await cedCli.setVersionMetadata().run(version, versionMetadata, environment);
+  await cedCli.pushSource().run(environment, version);
 };
 
 run();
