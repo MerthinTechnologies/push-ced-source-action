@@ -21,7 +21,7 @@ const run = async () => {
   }
 
   const versionMetadata = {
-    cvs: 'GitHub',
+    vcs: 'GitHub',
     commitSha: process.env['GITHUB_SHA'],
     repositoryUrl: `${process.env['GITHUB_SERVER_URL']}/${process.env['GITHUB_REPOSITORY']}`,
   };
