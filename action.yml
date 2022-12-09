@@ -11,5 +11,5 @@ inputs:
     description: "Path to the CloudEdgeDistribution project. If not specified it'll try to resolve it from environment variable CED_PROJECT_PATH, it'll use current folder otherwise."
     required: false
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
