@@ -1,5 +1,5 @@
 name: 'Push CED source files'
-description: 'Github Action to push source files to CloudEdgeDistribution'
+description: "Github Action to push source files to Merthin's Cloud/Edge Distribution"
 inputs:
   cli-token:
     description: "CloudEdgeDistribution CLI token. If not specified it'll try to resolve the CLI token from environment variable CED_CLI_TOKEN."
