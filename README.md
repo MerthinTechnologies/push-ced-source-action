@@ -1,6 +1,6 @@
 # Push CED source files
 
-Github Action to push source files to CloudEdgeDistribution.
+Github Action to push source files to Merthin's Cloud/Edge Distribution.
 
 ## Inputs
 
@@ -10,11 +10,11 @@ CloudEdgeDistribution CLI token. If not specified it'll try to resolve the CLI t
 
 ### `environment`
 
-Environment to use in CloudEdgeDistribution. If not specified it'll try to resolve it from environment variable `CED_ENVIRONMENT`, it'll use the default environment in ced.json otherwise.
+Environment to use in Cloud/Edge Distribution. If not specified it'll try to resolve it from environment variable `CED_ENVIRONMENT`, it'll use the default environment in ced.json otherwise.
 
 ### `path`
 
-Path to the CloudEdgeDistribution project. If not specified it'll try to resolve it from environment variable `CED_PROJECT_PATH`, it'll use current folder otherwise.
+Path to the Cloud/Edge Distribution project. If not specified it'll try to resolve it from environment variable `CED_PROJECT_PATH`, it'll use current folder otherwise.
 
 ## Example usage
 
