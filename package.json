@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@ced/cli": "^1.1.57"
+    "@ced/cli-dev": "^1.1.205"
   },
   "devDependencies": {
     "@types/node": "^18.11.15",
