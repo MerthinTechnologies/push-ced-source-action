@@ -34,7 +34,6 @@ const run = async () => {
     },
   });
   const version = await cedCli.createVersion().run(environment);
-
   await cedCli.setVersionMetadata().run(version, versionMetadata, environment);
   await cedCli.pushSource().run(environment, version);
 };
